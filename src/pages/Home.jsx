@@ -3,7 +3,6 @@ import Footer from '../components/Footer/Footer'
 import Hero from '../components/Hero/Hero'
 import ProjectsLists from '../components/ProjectsLists/ProjectsLists'
 
-
 function Home() {
     return (
         <>
@@ -14,7 +13,7 @@ function Home() {
             </div>
             <Footer />
         </>
-    );
+    )
 }
 
-export default Home;
+export default Home

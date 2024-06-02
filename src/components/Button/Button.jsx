@@ -1,12 +1,13 @@
-import './Button.css';
-import Arrow from '../../assets/white-arrow.svg';
+import './Button.css'
+import Arrow from '../../assets/white-arrow.svg'
+import LoadingSpinner from '../../assets/loading-spinner.gif'
 
-const Button = (props) => {
+const Button = ({ arrow, buttonStyle, loading, children, ...props }) => {
   return (
-    <button className={`button ${props.style}`}>
-      {props.children} {props.arrow ? <img src={Arrow} alt="Arrow" /> : null}
+    <button className={`button ${buttonStyle}`} {...props}>
+      {children} {arrow && <img src={Arrow} alt="Arrow" />} {loading && <img src={LoadingSpinner} alt="Loading" height="20px" />}
     </button>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

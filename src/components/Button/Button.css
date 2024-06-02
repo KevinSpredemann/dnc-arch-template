@@ -41,3 +41,18 @@
   background-color: #0C70F2;
   color: white;
 }
+
+/* Unstyled */
+.button.unstyled {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Disabled */
+.button:disabled, .button:disabled>:hover {
+  background: #ccc;
+  color: #666;
+  pointer-events: none;
+}

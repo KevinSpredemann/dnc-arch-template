@@ -13,5 +13,21 @@
 }
 
 .hero-text {
-    width: 435px;
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 568px) {
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
 }

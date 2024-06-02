@@ -14,13 +14,31 @@ a {
   text-decoration: none;
 }
 
+/* FORM */
+
+.form-input {
+  border: none;
+  border-bottom: 1px solid #292F36;
+  color: #292F36;
+  font-size: 22px;
+  font-family: "Jost", sans-serif;
+  padding: 0 0 13px 0;
+  outline: none;
+  width: 100%;
+}
+
+.form-input::placeholder {
+  color: #292F36;
+  opacity: 1; /* Firefox */
+}
+
 /* TYPOGRAPHY */
 h1, h2, h3, h4, h5, h6 {
   font-family: "DM Serif Display", serif;
   font-size: inherit;
   padding: 0;
   margin: 0;
-  letter-spacing: 3px;
+  letter-spacing: 2.5px;
 }
 
 p {
@@ -81,8 +99,16 @@ p {
   display: flex;
 }
 
+.fd-column {
+    flex-direction: column;
+}
+
 .jc-center {
   justify-content: center;
+}
+
+.jc-end {
+  justify-content: end;
 }
 
 .jc-space-between {

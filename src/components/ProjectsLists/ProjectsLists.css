@@ -23,9 +23,12 @@
   gap: 50px 22px;
 }
 
-.project-card img {
-    border-radius: 37px;
-    width: 100%;
+.project-card .thumb {
+  background-position: center;
+  background-size: cover;
+  border-radius: 37px;
+  height: 430px;
+  width: 100%;
 }
 
 .project-card h3 {
