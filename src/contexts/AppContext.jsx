@@ -12,8 +12,8 @@ export const AppProvider = ({ children }) => {
   useEffect(() => {
         const fetchLanguages = async () => {
             try {
-                const getTexts = await getApiData('webtexts/994')
-                setLanguages(getTexts.json_content)
+                const getTexts = await getApiData('webtext')
+                setLanguages(getTexts)
             } catch (e) {
                 console.error(e)
             }

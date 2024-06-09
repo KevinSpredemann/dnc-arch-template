@@ -1,6 +1,6 @@
 export const getApiData = async (endpoint, params) => {
     try {
-        const url = new URL(`https://opensource.datamundy.com/wp-json/wp/v2/${endpoint}`)
+        const url = new URL(`https://dnc-react-api.vercel.app/files/${endpoint}`)
         params ? Object.keys(params).forEach(key => url.searchParams.append(key, params[key])) : null
 
         const response = await fetch(url, {

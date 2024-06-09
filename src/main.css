@@ -80,6 +80,7 @@ p {
 
 /* GRID */
 .container {
+  box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
   max-width: 1140px;
@@ -116,9 +117,6 @@ p {
 }
 
 @media (max-width: 768px) {
-  .container {
-    width: 90%;
-  }
   .mobile-fd-column {
     flex-direction: column;
   }

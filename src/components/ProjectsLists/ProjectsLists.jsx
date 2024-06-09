@@ -70,10 +70,10 @@ const ProjectsLists = () => {
                     >
                         <div
                             className="thumb tertiary-background"
-                            style={{ backgroundImage: `url(${project.featured_media_url})` }}
+                            style={{ backgroundImage: `url(${project.thumb})` }}
                         ></div>
-                        <h3>{project.title.rendered}</h3>
-                        <p className="grey-1-color">{project.raw_content}</p>
+                        <h3>{project.title}</h3>
+                        <p className="grey-1-color">{project.subtitle}</p>
                         <Button
                             buttonStyle="unstyled"
                             onClick={() => handleFavProjects(project.id)}
