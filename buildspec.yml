@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+  install::
+    runtime-versions:
+      nodejs: 20
+    commands:
+      - echo "Installing dependencies..."
+      - npm install
+  build:
+    on-failure: ABORT
+    commands:
+      - echo "Building..."
+      - npm run build
+  post-build:
+    commands:
+      - echo "Build Complete!"
+      - aws cp dist s3://dnc-frontend2/ --recursive
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'dist'
+  
+cache:
+  paths:
+    - 'node_modules/**/*'
