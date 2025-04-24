@@ -12,16 +12,16 @@ phases:
     commands:
       - echo "Building..."
       - npm run build
-  post-build:
+  post_build:
     commands:
       - echo "Build Complete!"
-      - aws cp dist s3://dnc-frontend2/ --recursive
+      - aws S3 cp dist s3://dnc-frontend2/ --recursive
 
 artifacts:
   files:
     - '**/*'
   base-directory: 'dist'
-  
+
 cache:
   paths:
     - 'node_modules/**/*'
