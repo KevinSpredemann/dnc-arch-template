@@ -15,7 +15,7 @@ phases:
   post_build:
     commands:
       - echo "Build Complete!"
-      - aws S3 cp dist s3://dnc-frontend2/ --recursive
+      - aws s3 cp dist s3://dnc-frontend2/ --recursive
 
 artifacts:
   files:
